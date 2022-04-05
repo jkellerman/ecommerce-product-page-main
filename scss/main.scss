@@ -1,1 +1,47 @@
 @import "resets", "variables";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 1.25rem auto;
+}
+
+.logo {
+  transform: translateY(-3%);
+}
+
+.avatar {
+  img {
+    border-radius: 50%;
+    width: 24px;
+    cursor: pointer;
+  }
+
+  img:hover {
+    border: 1.5px solid $Orange;
+  }
+}
+
+.cart {
+  cursor: pointer;
+}
+
+.cart:hover svg > path {
+  fill: black;
+  transition: 0.2s ease-in-out;
+}
+
+.menu__mobile-container,
+.account__container {
+  display: flex;
+  align-items: center;
+}
+
+.menu__mobile-container {
+  gap: 1rem;
+}
+
+.account__container {
+  gap: 1.38625rem;
+}

@@ -9,4 +9,58 @@
 html {
   font-family: "Kumbh Sans", sans-serif;
 }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: 1.25rem auto;
+}
+
+.logo {
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 24px;
+  cursor: pointer;
+}
+
+.avatar img:hover {
+  border: 1.5px solid #ff7d1a;
+}
+
+.cart {
+  cursor: pointer;
+}
+
+.cart:hover svg > path {
+  fill: black;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.menu__mobile-container,
+.account__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__mobile-container {
+  gap: 1rem;
+}
+
+.account__container {
+  gap: 1.38625rem;
+}
 /*# sourceMappingURL=main.css.map */
