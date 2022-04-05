@@ -50,3 +50,16 @@ header {
 .account__container {
   gap: 1.38625rem;
 }
+
+@media (max-width: 414px) {
+  .carousel {
+    height: 300px;
+  }
+  .carousel__nav {
+    display: none;
+  }
+
+  .carousel__image {
+    border-radius: 0px;
+  }
+}
