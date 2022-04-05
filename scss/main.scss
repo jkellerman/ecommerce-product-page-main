@@ -51,6 +51,100 @@ header {
   gap: 1.38625rem;
 }
 
+.main__container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+h1 {
+  color: $Orange;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.85px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.1875rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.9375rem;
+  font-weight: 700;
+}
+
+.main__paragraph {
+  font-size: 0.9375rem;
+  color: $Dark-grayish-blue;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.price__container {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.current__pricing {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price {
+  font-size: 1.75rem;
+}
+
+.discount {
+  color: $Orange;
+  background: $Pale-orange;
+  padding: 0.4375rem 0.5rem 0.25rem;
+  border-radius: 6px;
+  width: 51px;
+}
+
+.original__price {
+  color: $Grayish-blue;
+}
+
+.addtocart__toggle {
+  width: 100%;
+  margin-bottom: 1rem;
+  background: $lightbox-background;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.375rem 1.5rem;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.addtocart__btn {
+  width: 100%;
+  background-color: $Orange;
+  color: $White;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.375rem 0;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  gap: 0.97125rem;
+  margin-bottom: 5.5rem;
+  box-shadow: 0 13px 20px -10px $Orange;
+}
+
+.addtocart__btn svg > path {
+  fill: $White;
+}
+
+// media query
+
 @media (max-width: 414px) {
   .carousel {
     height: 300px;
