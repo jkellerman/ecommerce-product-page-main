@@ -4,7 +4,8 @@
     "sources": [
         "../../scss/main.scss",
         "../../scss/_resets.scss",
-        "../../scss/_variables.scss"
+        "../../scss/_variables.scss",
+        "../../scss/_carousel.scss"
     ],
     "names": [],
     "file": "main.css"
