@@ -26,6 +26,10 @@ header {
           transform: translateY(-3%);
 }
 
+.menu__mobile {
+  cursor: pointer;
+}
+
 .avatar img {
   border-radius: 50%;
   width: 24px;
@@ -34,6 +38,8 @@ header {
 
 .avatar img:hover {
   border: 1.5px solid #ff7d1a;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .cart {

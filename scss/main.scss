@@ -11,6 +11,10 @@ header {
   transform: translateY(-3%);
 }
 
+.menu__mobile {
+  cursor: pointer;
+}
+
 .avatar {
   img {
     border-radius: 50%;
@@ -20,6 +24,7 @@ header {
 
   img:hover {
     border: 1.5px solid $Orange;
+    transition: 0.1s;
   }
 }
 
