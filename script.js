@@ -1,4 +1,5 @@
 import { carousel } from "./carousel.js";
+import { shoppingcart } from "./shoppingcart.js";
 
 const mobileNav = document.querySelector(".mobile__nav");
 const closeBtn = document.querySelector(".mobile__nav--close-btn");
