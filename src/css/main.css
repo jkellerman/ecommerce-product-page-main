@@ -152,6 +152,10 @@ header {
   cursor: pointer;
 }
 
+.desktop__nav {
+  display: none;
+}
+
 .avatar img {
   border-radius: 50%;
   width: 24px;
@@ -345,9 +349,6 @@ h2 {
 }
 
 @media (min-width: 540px) {
-  .hamburger {
-    display: none;
-  }
   .carousel {
     height: 445px;
     border-radius: 15px;
@@ -363,6 +364,34 @@ h2 {
   }
   .carousel__track-container {
     border-radius: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    border-bottom: 1px solid #e3e8f2;
+    padding-bottom: 2.125rem;
+    margin: 2.5625rem auto 5.625rem;
+  }
+  .desktop__nav {
+    display: block;
+  }
+  .desktop__nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .desktop__nav ul li {
+    list-style: none;
+  }
+  .desktop__nav ul li a {
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.9375rem;
+    color: #68707d;
+  }
+  .hamburger {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
