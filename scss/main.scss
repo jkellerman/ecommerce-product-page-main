@@ -156,12 +156,17 @@ h2 {
 @media (max-width: 414px) {
   .carousel {
     height: 300px;
+    border-radius: 0px;
   }
   .carousel__nav {
     display: none;
   }
 
   .carousel__image {
+    border-radius: 0px;
+  }
+
+  .carousel__track-container {
     border-radius: 0px;
   }
 }
