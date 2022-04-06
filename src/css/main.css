@@ -29,12 +29,19 @@ html {
 .carousel__track-container {
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .carousel__track {
   padding: 0;
   margin: 0;
   list-style: none;
+  position: relative;
+  height: 100%;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 
 .carousel__slide {
@@ -293,6 +300,15 @@ h2 {
 
 .addtocart__btn svg > path {
   fill: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 
 @media (max-width: 414px) {
