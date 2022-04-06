@@ -28,7 +28,7 @@ header {
 
   img:hover {
     border: 1.5px solid $Orange;
-    transition: 0.1s;
+    transition: 0.2s ease-in-out;
   }
 }
 
@@ -248,6 +248,14 @@ h2 {
   }
 
   .hamburger {
+    display: none;
+  }
+
+  .carousel {
+    margin-bottom: 10rem;
+  }
+
+  .carousel__button {
     display: none;
   }
 }

@@ -162,8 +162,8 @@ header {
 
 .avatar img:hover {
   border: 1.5px solid #ff7d1a;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .cart {
@@ -413,6 +413,12 @@ h2 {
     transition: 0.2s ease-in;
   }
   .hamburger {
+    display: none;
+  }
+  .carousel {
+    margin-bottom: 10rem;
+  }
+  .carousel__button {
     display: none;
   }
 }
