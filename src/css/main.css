@@ -12,7 +12,7 @@ html {
 
 .carousel {
   position: relative;
-  height: 445px;
+  height: 300px;
   width: 100%;
   margin: 0 auto;
   max-width: 445px;
@@ -24,13 +24,14 @@ html {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0px;
 }
 
 .carousel__track-container {
   height: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 0px;
 }
 
 .carousel__track {
@@ -74,13 +75,7 @@ html {
 }
 
 .carousel__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 2rem;
+  display: none;
 }
 
 .carousel__indicator {
@@ -133,6 +128,10 @@ html {
   display: none;
 }
 
+body {
+  min-height: 100vh;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,7 +148,7 @@ header {
           transform: translateY(-3%);
 }
 
-.menu__mobile {
+.hamburger {
   cursor: pointer;
 }
 
@@ -191,6 +190,34 @@ header {
 
 .account__container {
   gap: 1.38625rem;
+}
+
+.mobile__nav {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 67%;
+  height: 100%;
+  padding-top: 1.5rem;
+  padding-left: 1.5625rem;
+  border: none;
+}
+
+.mobile__nav li {
+  list-style: none;
+  margin-bottom: 1.25rem;
+}
+
+.mobile__nav li a {
+  font-weight: 700;
+  color: #1d2025;
+  text-decoration: none;
+}
+
+.mobile__nav--close-btn {
+  margin-bottom: 3.36125rem;
 }
 
 .main__container {
@@ -317,19 +344,25 @@ h2 {
   color: #3e52a3;
 }
 
-@media (max-width: 414px) {
-  .carousel {
-    height: 300px;
-    border-radius: 0px;
-  }
-  .carousel__nav {
+@media (min-width: 540px) {
+  .hamburger {
     display: none;
   }
-  .carousel__image {
-    border-radius: 0px;
+  .carousel {
+    height: 445px;
+    border-radius: 15px;
+  }
+  .carousel__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 2rem;
   }
   .carousel__track-container {
-    border-radius: 0px;
+    border-radius: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */

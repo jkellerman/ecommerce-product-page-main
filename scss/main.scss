@@ -1,5 +1,9 @@
 @import "resets", "variables", "carousel";
 
+body {
+  min-height: 100vh;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -11,7 +15,7 @@ header {
   transform: translateY(-3%);
 }
 
-.menu__mobile {
+.hamburger {
   cursor: pointer;
 }
 
@@ -49,6 +53,33 @@ header {
 
 .account__container {
   gap: 1.38625rem;
+}
+
+.mobile__nav {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background: $White;
+  width: 67%;
+  height: 100%;
+  padding-top: 1.5rem;
+  padding-left: 1.5625rem;
+  border: none;
+
+  li {
+    list-style: none;
+    margin-bottom: 1.25rem;
+
+    a {
+      font-weight: 700;
+      color: $Very-dark-blue;
+      text-decoration: none;
+    }
+  }
+}
+.mobile__nav--close-btn {
+  margin-bottom: 3.36125rem;
 }
 
 .main__container {
@@ -153,20 +184,21 @@ h2 {
 
 // media query
 
-@media (max-width: 414px) {
-  .carousel {
-    height: 300px;
-    border-radius: 0px;
-  }
-  .carousel__nav {
+@media (min-width: 540px) {
+  .hamburger {
     display: none;
   }
-
-  .carousel__image {
-    border-radius: 0px;
+  .carousel {
+    height: 445px;
+    border-radius: 15px;
+  }
+  .carousel__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
   }
 
   .carousel__track-container {
-    border-radius: 0px;
+    border-radius: 15px;
   }
 }
