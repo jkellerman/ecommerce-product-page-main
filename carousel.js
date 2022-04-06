@@ -58,8 +58,8 @@ nextButton.addEventListener("click", () => {
   updateNavImgs(currentNavImage, nextNavImage);
   hideShowArrows(slides, prevButton, nextButton, nextIndex);
 });
-// when click nav indicators move to that slide
 
+// when click nav indicators move to that slide
 carouselNav.addEventListener("click", (e) => {
   // what indicator was clicked on
   const targetImage = e.target.closest("button");
