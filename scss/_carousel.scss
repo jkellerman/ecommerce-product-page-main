@@ -76,6 +76,11 @@
   }
 }
 
+.carousel__indicator:hover {
+  box-shadow: inset 0 0 100px 0px $lightbox-background;
+  transition: 0.25s ease-in-out;
+}
+
 .carousel__indicator:first-of-type {
   background: url(/images/image-product-1-thumbnail.jpg);
   background-repeat: no-repeat;

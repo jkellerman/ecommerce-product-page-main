@@ -139,6 +139,7 @@ h2 {
 
 .original__price {
   color: $Grayish-blue;
+  text-decoration: line-through;
 }
 
 .addtocart__toggle {
@@ -168,10 +169,26 @@ h2 {
   gap: 0.97125rem;
   margin-bottom: 5.5rem;
   box-shadow: 0 13px 20px -10px $Orange;
+  cursor: pointer;
+}
+
+.addtocart__btn:hover {
+  background-color: $hover-state;
+  transition: 0.25s;
 }
 
 .addtocart__btn svg > path {
   fill: $White;
+}
+
+.minus,
+.plus {
+  cursor: pointer;
+}
+
+.minus:hover defs > path,
+.plus:hover path {
+  fill: $hover-state;
 }
 
 .attribution {
@@ -184,7 +201,7 @@ h2 {
 
 // media query
 
-@media (min-width: 540px) {
+@media (min-width: 767px) {
   .carousel {
     height: 445px;
     border-radius: 15px;
@@ -244,6 +261,11 @@ h2 {
         border-bottom: 2px solid $Orange;
         transition: 0.2s ease-in;
       }
+
+      li:hover > a {
+        color: $Very-dark-blue;
+        transition: 0.2s ease-in;
+      }
     }
   }
 
@@ -257,5 +279,51 @@ h2 {
 
   .carousel__button {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    display: flex;
+    max-width: 1015px;
+    margin: auto;
+    gap: 7.8125rem;
+  }
+
+  .main__container {
+    margin-top: 2rem;
+  }
+
+  h1 {
+    font-size: 0.8125rem;
+  }
+
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  .price__container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+
+  .current__pricing {
+    margin-bottom: 0.625rem;
+  }
+
+  .addtocart {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .addtocart__toggle {
+    width: 157px;
+    height: 56px;
+  }
+  .addtocart__btn {
+    width: 272px;
+    height: 56px;
+    box-shadow: none;
   }
 }
