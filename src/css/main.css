@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-* {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -126,10 +128,6 @@ html {
 
 .is-hidden {
   display: none;
-}
-
-body {
-  min-height: 100vh;
 }
 
 header {
@@ -370,25 +368,49 @@ h2 {
 @media (min-width: 768px) {
   header {
     border-bottom: 1px solid #e3e8f2;
-    padding-bottom: 2.125rem;
+    height: 4rem;
     margin: 2.5625rem auto 5.625rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .menu__mobile-container {
+    height: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .logo {
+    margin-right: 3.53125rem;
   }
   .desktop__nav {
     display: block;
+    height: 100%;
+  }
+  .desktop__nav nav {
+    height: 100%;
   }
   .desktop__nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 100%;
+    gap: 2rem;
   }
   .desktop__nav ul li {
     list-style: none;
+    height: 100%;
+    cursor: pointer;
   }
   .desktop__nav ul li a {
     text-decoration: none;
-    margin-left: 2rem;
     font-size: 0.9375rem;
     color: #68707d;
+  }
+  .desktop__nav ul li:hover {
+    border-bottom: 2px solid #ff7d1a;
+    -webkit-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
   }
   .hamburger {
     display: none;

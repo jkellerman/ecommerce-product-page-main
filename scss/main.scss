@@ -1,9 +1,5 @@
 @import "resets", "variables", "carousel";
 
-body {
-  min-height: 100vh;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -207,24 +203,46 @@ h2 {
 @media (min-width: 768px) {
   header {
     border-bottom: 1px solid $header-underline;
-    padding-bottom: 2.125rem;
+    height: 4rem;
     margin: 2.5625rem auto 5.625rem;
+    align-items: flex-start;
+  }
+
+  .menu__mobile-container {
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-right: 3.53125rem;
   }
   .desktop__nav {
     display: block;
+    height: 100%;
+
+    nav {
+      height: 100%;
+    }
 
     ul {
       display: flex;
+      height: 100%;
+      gap: 2rem;
 
       li {
         list-style: none;
+        height: 100%;
+        cursor: pointer;
 
         a {
           text-decoration: none;
-          margin-left: 2rem;
           font-size: 0.9375rem;
           color: $Dark-grayish-blue;
         }
+      }
+      li:hover {
+        border-bottom: 2px solid $Orange;
+        transition: 0.2s ease-in;
       }
     }
   }
