@@ -175,12 +175,26 @@ header {
 
 .cart {
   cursor: pointer;
+  position: relative;
 }
 
 .cart:hover svg > path {
   fill: black;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+}
+
+.cart__bubble {
+  color: white;
+  background: #ff7d1a;
+  width: 19px;
+  height: 13px;
+  font-size: 0.625rem;
+  text-align: center;
+  border-radius: 6.5px;
+  position: absolute;
+  top: -25%;
+  right: -25%;
 }
 
 .menu__mobile-container,
