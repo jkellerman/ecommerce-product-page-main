@@ -218,7 +218,6 @@ h2 {
     height: 4rem;
     margin: 2.5625rem auto 5.625rem;
     align-items: flex-start;
-    width: 77.5%;
   }
 
   .menu__mobile-container {
@@ -288,6 +287,9 @@ h2 {
 }
 
 @media (min-width: 1200px) {
+  header {
+    width: 77.5%;
+  }
   .cart__window {
     left: unset;
     top: -7rem;

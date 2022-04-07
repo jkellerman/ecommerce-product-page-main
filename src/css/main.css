@@ -164,6 +164,7 @@ html {
 }
 
 .cart__window {
+  display: none;
   position: absolute;
   left: 0;
   right: 0;
@@ -495,7 +496,6 @@ h2 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 77.5%;
   }
   .menu__mobile-container {
     height: 100%;
@@ -561,6 +561,9 @@ h2 {
 }
 
 @media (min-width: 1200px) {
+  header {
+    width: 77.5%;
+  }
   .cart__window {
     left: unset;
     top: -7rem;
