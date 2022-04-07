@@ -32,6 +32,8 @@ addToCartBtn.addEventListener("click", () => {
   const totalPrice = document.querySelector(".cart__total");
   if (currentAmount > "0") {
     cartTotal.innerText = currentAmount;
+    cartBubble.style.animation =
+      "appear 0.45s cubic-bezier(0.52, -0.07, 0.42, 0.83) 1 normal backwards";
     cartBubble.style.display = "block";
     emptyCart.classList.add("hide");
     cartContainer.classList.remove("hide");
@@ -59,7 +61,8 @@ deleteBtn.addEventListener("click", () => {
 
 function removeItems() {
   cartTotal.innerText = "0";
-  cartBubble.style.display = "none";
   emptyCart.classList.remove("hide");
   cartContainer.classList.add("hide");
+  cartBubble.style.animation =
+    "disappear 0.45s cubic-bezier(0.52, -0.07, 0.42, 0.83) 1 normal forwards";
 }

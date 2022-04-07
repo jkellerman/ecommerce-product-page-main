@@ -161,6 +161,8 @@ html {
   top: -25%;
   right: -25%;
   display: none;
+  -webkit-animation: appear 0.45s cubic-bezier(0.52, -0.07, 0.42, 0.83) 1 normal backwards;
+          animation: appear 0.45s cubic-bezier(0.52, -0.07, 0.42, 0.83) 1 normal backwards;
 }
 
 .cart__window {
@@ -310,7 +312,7 @@ header {
 }
 
 .mobile__nav {
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   top: 0;
   left: 0;
@@ -320,6 +322,7 @@ header {
   padding-top: 1.5rem;
   padding-left: 1.5625rem;
   border: none;
+  max-height: 100vh;
 }
 
 .mobile__nav li {
@@ -331,6 +334,18 @@ header {
   font-weight: 700;
   color: #1d2025;
   text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.mobile__nav::-webkit-backdrop {
+  opacity: 0.8;
+  background-color: #1d2025;
+}
+
+.mobile__nav::backdrop {
+  opacity: 0.8;
+  background-color: #1d2025;
 }
 
 .mobile__nav--close-btn {
@@ -638,6 +653,50 @@ h2 {
 @media (min-width: 1201px) and (max-width: 1300px) {
   .cart__window {
     right: -4rem;
+  }
+}
+
+@-webkit-keyframes appear {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes disappear {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes disappear {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 /*# sourceMappingURL=main.css.map */

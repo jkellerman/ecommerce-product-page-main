@@ -21,6 +21,8 @@
   top: -25%;
   right: -25%;
   display: none;
+  animation: appear 0.45s cubic-bezier(0.52, -0.07, 0.42, 0.83) 1 normal
+    backwards;
 }
 
 .cart__window {
