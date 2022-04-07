@@ -6,7 +6,6 @@ const mobileNav = document.querySelector(".mobile__nav");
 const closeBtn = document.querySelector(".mobile__nav--close-btn");
 const hamburger = document.querySelector(".hamburger");
 const modal = document.querySelector(".modal");
-// const carouselTrack = document.querySelector(".carousel__image");
 const modalCloseBtn = document.querySelector(".modal__close-btn");
 
 hamburger.addEventListener("click", () => {
