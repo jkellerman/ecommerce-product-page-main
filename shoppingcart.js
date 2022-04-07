@@ -5,6 +5,10 @@ const addToCartBtn = document.querySelector(".addtocart__btn");
 const cartBubble = document.querySelector(".cart__bubble");
 const cart = document.querySelector(".cart");
 const cartWindow = document.querySelector(".cart__window");
+const emptyCart = document.querySelector(".empty-cart__container");
+const cartTotal = cartBubble;
+const cartContainer = document.querySelector(".cart__container");
+const deleteBtn = document.querySelector(".cart__delete");
 
 // add amount with 10 as max
 plus.addEventListener("click", () => {
@@ -22,14 +26,22 @@ minus.addEventListener("click", () => {
 });
 // add amount to cart
 addToCartBtn.addEventListener("click", () => {
-  let cartTotal = cartBubble;
-  let currentAmount = amount.innerText;
+  const currentAmount = amount.innerText;
+  const itemTotal = document.querySelector(".item__total");
+  const itemPrice = document.querySelector(".cart__price");
+  const totalPrice = document.querySelector(".cart__total");
   if (currentAmount > "0") {
     cartTotal.innerText = currentAmount;
     cartBubble.style.display = "block";
+    emptyCart.classList.add("hide");
+    cartContainer.classList.remove("hide");
+    itemTotal.innerText = `x${currentAmount}`;
+    const removeSign = itemPrice.innerText.replace(/\£/g, "");
+    const convertToInt = parseInt(removeSign);
+    const newTotal = convertToInt * currentAmount;
+    totalPrice.innerText = `£${newTotal.toFixed(2)}`;
   } else {
-    cartTotal.innerText = "0";
-    cartBubble.style.display = "none";
+    removeItems();
   }
 });
 
@@ -38,3 +50,16 @@ addToCartBtn.addEventListener("click", () => {
 cart.addEventListener("click", () => {
   cartWindow.classList.toggle("hide__cart");
 });
+
+deleteBtn.addEventListener("click", () => {
+  removeItems();
+});
+
+// remove items from cart
+
+function removeItems() {
+  cartTotal.innerText = "0";
+  cartBubble.style.display = "none";
+  emptyCart.classList.remove("hide");
+  cartContainer.classList.add("hide");
+}
