@@ -24,7 +24,6 @@
 }
 
 .cart__window {
-  display: none;
   position: absolute;
   left: 0;
   right: 0;
@@ -39,6 +38,10 @@
   padding: 1.5rem;
 }
 
+.hide__cart {
+  display: none;
+}
+
 .cart__header {
   font-weight: 700;
   margin-bottom: 1.6875rem;
@@ -51,6 +54,13 @@
   margin-right: -1.5rem;
 }
 
+.empty-cart__container {
+  padding: 4.8125rem 0 3.8125rem;
+  text-align: center;
+  color: $Dark-grayish-blue;
+  font-weight: 700;
+}
+
 .items__container {
   display: flex;
   align-items: center;
@@ -61,6 +71,10 @@
     height: 50px;
     border-radius: 4px;
   }
+}
+
+.hide {
+  display: none;
 }
 
 .item {

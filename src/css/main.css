@@ -164,7 +164,6 @@ html {
 }
 
 .cart__window {
-  display: none;
   position: absolute;
   left: 0;
   right: 0;
@@ -179,6 +178,10 @@ html {
   padding: 1.5rem;
 }
 
+.hide__cart {
+  display: none;
+}
+
 .cart__header {
   font-weight: 700;
   margin-bottom: 1.6875rem;
@@ -189,6 +192,13 @@ html {
   border: 0.5px solid #e3e8f2;
   margin-left: -1.5rem;
   margin-right: -1.5rem;
+}
+
+.empty-cart__container {
+  padding: 4.8125rem 0 3.8125rem;
+  text-align: center;
+  color: #68707d;
+  font-weight: 700;
 }
 
 .items__container {
@@ -206,6 +216,10 @@ html {
   width: 50px;
   height: 50px;
   border-radius: 4px;
+}
+
+.hide {
+  display: none;
 }
 
 .item {
