@@ -12,6 +12,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 0px;
+  cursor: pointer;
 }
 
 .carousel__track-container {
@@ -112,4 +113,49 @@
 
 .is-hidden {
   display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 8.3125rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: rgba($color: white, $alpha: 0);
+  width: 550px;
+  height: 722px;
+
+  svg {
+    position: absolute;
+    right: 0;
+    top: -2rem;
+    z-index: 10000;
+    cursor: pointer;
+  }
+
+  svg > path {
+    fill: $White;
+    margin-bottom: 1.5rem;
+  }
+
+  svg > path:hover {
+    fill: $Orange;
+    transition: 0.2s;
+  }
+
+  .carousel {
+    transform: translateY(5rem);
+  }
+
+  .carousel__image {
+    cursor: unset;
+  }
+}
+
+.modal::backdrop {
+  opacity: 0.8;
+  background-color: $Very-dark-blue;
 }

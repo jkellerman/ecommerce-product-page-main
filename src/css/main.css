@@ -27,6 +27,7 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0px;
+  cursor: pointer;
 }
 
 .carousel__track-container {
@@ -135,6 +136,58 @@ html {
 
 .is-hidden {
   display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 8.3125rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  width: 550px;
+  height: 722px;
+}
+
+.modal svg {
+  position: absolute;
+  right: 0;
+  top: -2rem;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+.modal svg > path {
+  fill: white;
+  margin-bottom: 1.5rem;
+}
+
+.modal svg > path:hover {
+  fill: #ff7d1a;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.modal .carousel {
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
+}
+
+.modal .carousel__image {
+  cursor: unset;
+}
+
+.modal::-webkit-backdrop {
+  opacity: 0.8;
+  background-color: #1d2025;
+}
+
+.modal::backdrop {
+  opacity: 0.8;
+  background-color: #1d2025;
 }
 
 .cart {

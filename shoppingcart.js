@@ -53,6 +53,8 @@ cart.addEventListener("click", () => {
   cartWindow.classList.toggle("hide__cart");
 });
 
+// remove items when delete button is clicked
+
 deleteBtn.addEventListener("click", () => {
   removeItems();
 });
