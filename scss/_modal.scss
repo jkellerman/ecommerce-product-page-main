@@ -94,12 +94,29 @@
   background-color: white;
 
   svg {
-    transform: translate(-1rem, 2.6rem);
+    transform: translate(-0.8rem, 2.75rem);
+  }
+
+  svg:hover > path {
+    stroke: $Orange;
+    fill: rgba($color: white, $alpha: 1);
+    transition: 0.2s;
   }
 }
 
 .carousel__button--right--modal {
   right: -1.25rem;
+  background-color: white;
+
+  svg {
+    transform: translate(-0.8rem, 2.6rem);
+  }
+
+  svg:hover > path {
+    stroke: $Orange;
+    fill: rgba($color: white, $alpha: 1);
+    transition: 0.2s;
+  }
 }
 
 .carousel__nav--modal {

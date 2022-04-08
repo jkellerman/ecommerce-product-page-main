@@ -367,12 +367,32 @@ html {
 }
 
 .carousel__button--left--modal svg {
-  -webkit-transform: translate(-1rem, 2.6rem);
-          transform: translate(-1rem, 2.6rem);
+  -webkit-transform: translate(-0.8rem, 2.75rem);
+          transform: translate(-0.8rem, 2.75rem);
+}
+
+.carousel__button--left--modal svg:hover > path {
+  stroke: #ff7d1a;
+  fill: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .carousel__button--right--modal {
   right: -1.25rem;
+  background-color: white;
+}
+
+.carousel__button--right--modal svg {
+  -webkit-transform: translate(-0.8rem, 2.6rem);
+          transform: translate(-0.8rem, 2.6rem);
+}
+
+.carousel__button--right--modal svg:hover > path {
+  stroke: #ff7d1a;
+  fill: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .carousel__nav--modal {
