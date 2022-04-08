@@ -551,6 +551,7 @@ header {
 
 .mobile__nav--close-btn {
   margin-bottom: 3.36125rem;
+  cursor: pointer;
 }
 
 main {
