@@ -1,6 +1,7 @@
 // import { carousel } from "./carousel.js";
 import { shoppingcart } from "./shoppingcart.js";
 import { track } from "./carousel.js";
+import { carouselModal } from "./modal.js";
 
 const mobileNav = document.querySelector(".mobile__nav");
 const closeBtn = document.querySelector(".mobile__nav--close-btn");
