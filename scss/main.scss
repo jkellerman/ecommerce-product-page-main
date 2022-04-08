@@ -58,6 +58,7 @@ header {
   padding-left: 1.5625rem;
   border: none;
   max-height: 100vh;
+  animation: nav-enter 1s backwards;
 
   li {
     list-style: none;
@@ -375,5 +376,11 @@ h2 {
 
   to {
     transform: scale(0);
+  }
+}
+
+@keyframes nav-enter {
+  from {
+    transform: translateX(-100vw);
   }
 }
