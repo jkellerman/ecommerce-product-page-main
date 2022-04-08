@@ -363,6 +363,12 @@ html {
 
 .carousel__button--left--modal {
   left: -1.25rem;
+  background-color: white;
+}
+
+.carousel__button--left--modal svg {
+  -webkit-transform: translate(-1rem, 2.6rem);
+          transform: translate(-1rem, 2.6rem);
 }
 
 .carousel__button--right--modal {
