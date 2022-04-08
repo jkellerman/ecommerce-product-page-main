@@ -88,13 +88,6 @@ html {
   cursor: pointer;
 }
 
-.carousel__indicator img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
-}
-
 .carousel__indicator:hover {
   -webkit-box-shadow: inset 0 0 100px 0px #f0efef;
           box-shadow: inset 0 0 100px 0px #f0efef;
@@ -412,13 +405,6 @@ html {
   cursor: pointer;
 }
 
-.carousel__indicator--modal img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
-}
-
 .carousel__indicator--modal:hover {
   -webkit-box-shadow: inset 0 0 100px 0px #f0efef;
           box-shadow: inset 0 0 100px 0px #f0efef;
@@ -427,25 +413,25 @@ html {
 }
 
 .carousel__indicator--modal:first-of-type {
-  background-image: url(".../images/image-product-1-thumbnail.jpg");
+  background-image: url(.../images/image-product-1-thumbnail.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .carousel__indicator--modal:nth-of-type(2) {
-  background-image: url(".../images/image-product-2-thumbnail.jpg");
+  background-image: url(.../images/image-product-2-thumbnail.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .carousel__indicator--modal:nth-of-type(3) {
-  background-image: url(".../images/image-product-3-thumbnail.jpg");
+  background-image: url(.../images/image-product-3-thumbnail.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .carousel__indicator--modal:last-of-type {
-  background-image: url(".../images/image-product-4-thumbnail.jpg");
+  background-image: url(.../images/image-product-4-thumbnail.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
