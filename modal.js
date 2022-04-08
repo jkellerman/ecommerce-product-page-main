@@ -11,7 +11,6 @@ const modalCarouselNavImgs = Array.from(modalCarouselNav.children);
 
 // arrange slides next to one another
 const setSlidePositionModal = (slide, index) => {
-  // could not use the getBoundingClientRect method so used fixed measurement instead, maybe this is something to do with it being a dialog element?
   slide.style.left = 550 * index + "px";
 };
 modalSlides.forEach(setSlidePositionModal);

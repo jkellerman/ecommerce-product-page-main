@@ -1,4 +1,3 @@
-// import { carousel } from "./carousel.js";
 import { shoppingcart } from "./shoppingcart.js";
 import { track } from "./carousel.js";
 import { carouselModal } from "./modal.js";
