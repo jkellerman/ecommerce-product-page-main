@@ -51,7 +51,7 @@ Users should be able to:
 
 This is my first project building a shopping cart, however there were a number of different challenges in this project, including building a carousel and a modal which took a bit of time to figure out.
 
-I learned a quick and easy way of building a modal using the dialog tag and then adding the showmodal() and close() methods to the appropriate elements and then adding the css property backdrop to add background color behind the modal area. See snippets below. This way is much more efficient than the old the way I was doing this, which was to create a new element to use as a backdrop which can get a bit messy. One thing to point out with using dialog tags is that the modal has will have some default styles that you may want to remove.
+I learned a quick and easy way of building a modal using the dialog tag and then adding the showmodal() and close() methods to the appropriate elements and then adding the css property backdrop to add background color behind the modal area. See snippets below. This way is much more efficient than the old the way I was doing this, which was to create a new element to use as a backdrop which can get a bit messy. One thing to point out with using dialog tags is that the modal will have some default styles that you may want to remove.
 
 I also learned how to use a media query for JavaScript. In this example, I had a click event on the carousel which would pop up a modal, however, I only wanted this to happen on tablet or desktop screens, so I created a resize event listener which would only pop up the modal in screensizes with a min-width of 768px. See code snippet below.
 
