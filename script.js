@@ -7,17 +7,22 @@ const closeBtn = document.querySelector(".mobile__nav--close-btn");
 const hamburger = document.querySelector(".hamburger");
 const modal = document.querySelector(".modal");
 const modalCloseBtn = document.querySelector(".modal__close-btn");
+const background = document.querySelector(".bg-modal");
+const backgroundNav = document.querySelector(".bg-modal-nav");
 
 hamburger.addEventListener("click", () => {
-  mobileNav.showModal();
+  mobileNav.style.display = "block";
+  backgroundNav.style.display = "block";
 });
 
 closeBtn.addEventListener("click", () => {
-  mobileNav.close();
+  mobileNav.style.display = "none";
+  backgroundNav.style.display = "none";
 });
 
 modalCloseBtn.addEventListener("click", () => {
-  modal.close();
+  modal.style.display = "none";
+  background.style.display = "none";
 });
 
 track.addEventListener("click", () => {
@@ -28,6 +33,7 @@ track.addEventListener("click", () => {
 
 function popUp(x) {
   if (x.matches) {
-    modal.showModal();
+    modal.style.display = "block";
+    background.style.display = "block";
   }
 }
