@@ -64,7 +64,6 @@ carouselNav.addEventListener("click", (e) => {
   // what indicator was clicked on
   const targetImage = e.target.closest("button");
   if (!targetImage) return;
-
   const currentSlide = track.querySelector(".current-slide");
   const currentNavImage = carouselNav.querySelector(".current-slide");
   const targetIndex = carouselNavImgs.findIndex((img) => img === targetImage);
