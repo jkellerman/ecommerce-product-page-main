@@ -10,7 +10,7 @@ const modalCarouselNav = document.querySelector(".carousel__nav--modal");
 const modalCarouselNavImgs = Array.from(modalCarouselNav.children);
 
 // arrange slides next to one another
-const setSlidePositionModal = (slide, index) => {
+export const setSlidePositionModal = (slide, index) => {
   slide.style.left = 550 * index + "px";
 };
 modalSlides.forEach(setSlidePositionModal);

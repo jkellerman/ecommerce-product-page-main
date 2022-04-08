@@ -61,7 +61,7 @@ deleteBtn.addEventListener("click", () => {
 
 // remove items from cart
 
-function removeItems() {
+export function removeItems() {
   cartTotal.innerText = "0";
   emptyCart.classList.remove("hide");
   cartContainer.classList.add("hide");
