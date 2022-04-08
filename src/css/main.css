@@ -166,7 +166,7 @@ html {
   margin-right: auto;
   border-radius: 10px;
   width: 97.5%;
-  z-index: 100000;
+  z-index: 4;
   background-color: white;
   max-width: 360px;
   padding: 1.5rem;
@@ -488,7 +488,7 @@ header {
 .mobile__nav {
   display: none;
   position: fixed;
-  z-index: 4;
+  z-index: 6;
   top: 0;
   left: 0;
   background: white;
@@ -666,7 +666,7 @@ h2 {
   opacity: 0.8;
   background-color: #1d2025;
   top: 0;
-  z-index: 3;
+  z-index: 5;
 }
 
 .attribution {
