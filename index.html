@@ -249,7 +249,7 @@
         </div>
       </div>
       <dialog class="modal">
-        <div class="carousel">
+        <div class="carousel__modal">
           <svg
             class="modal__close-btn"
             width="14"
@@ -262,7 +262,9 @@
               fill-rule="evenodd"
             />
           </svg>
-          <button class="carousel__button carousel__button--left is-hidden">
+          <button
+            class="carousel__button--modal carousel__button--left--modal is-hidden"
+          >
             <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M11 1 3 9l8 8"
@@ -273,55 +275,49 @@
               />
             </svg>
           </button>
-          <div class="carousel__track-container">
-            <ul class="carousel__track">
-              <li class="carousel__slide current-slide">
+          <div class="carousel__track-container--modal">
+            <ul class="carousel__track--modal">
+              <li class="carousel__slide--modal current-slide">
                 <img
-                  class="carousel__image"
+                  class="carousel__image--modal"
                   src="images/image-product-1.jpg"
                   alt="image-product-1"
                 />
               </li>
-              <li class="carousel__slide">
+              <li class="carousel__slide--modal">
                 <img
-                  class="carousel__image"
+                  class="carousel__image--modal"
                   src="images/image-product-2.jpg"
                   alt="image-product-2"
                 />
               </li>
-              <li class="carousel__slide">
+              <li class="carousel__slide--modal">
                 <img
-                  class="carousel__image"
+                  class="carousel__image--modal"
                   src="images/image-product-3.jpg"
                   alt="image-product-3"
                 />
               </li>
-              <li class="carousel__slide">
+              <li class="carousel__slide--modal">
                 <img
-                  class="carousel__image"
+                  class="carousel__image--modal"
                   src="images/image-product-4.jpg"
                   alt="image-product-4"
                 />
               </li>
             </ul>
           </div>
-          <button class="carousel__button carousel__button--right">
-            <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="m3 4 6 6-6 6"
-                stroke="#1D2026"
-                stroke-width="3"
-                fill="none"
-                fill-rule="evenodd"
-              />
-            </svg>
+          <button
+            class="carousel__button--modal carousel__button--right--modal"
+          >
+            <img src="images/icon-next.svg" alt="icon-next" />
           </button>
 
-          <div class="carousel__nav">
-            <button class="carousel__indicator current-slide"></button>
-            <button class="carousel__indicator"></button>
-            <button class="carousel__indicator"></button>
-            <button class="carousel__indicator"></button>
+          <div class="carousel__nav--modal">
+            <button class="carousel__indicator--modal current-slide"></button>
+            <button class="carousel__indicator--modal"></button>
+            <button class="carousel__indicator--modal"></button>
+            <button class="carousel__indicator--modal"></button>
           </div>
         </div>
       </dialog>

@@ -1,28 +1,66 @@
-.carousel {
-  position: relative;
-  height: 300px;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 445px;
-  border-radius: 15px;
+.modal {
+  position: absolute;
+  top: 8.3125rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: rgba($color: white, $alpha: 0);
+  height: 100vh;
+  width: 100vw;
+
+  svg {
+    position: absolute;
+    right: 0;
+    top: -2rem;
+    z-index: 10000;
+    cursor: pointer;
+  }
+
+  svg > path {
+    fill: $White;
+    margin-bottom: 1.5rem;
+  }
+
+  svg > path:hover {
+    fill: $Orange;
+    transition: 0.2s;
+  }
 }
 
-.carousel__image {
+.modal::backdrop {
+  opacity: 0.8;
+  background-color: $Very-dark-blue;
+}
+
+.carousel__modal {
+  position: relative;
+  height: 550px;
+  width: 550px;
+  margin: 0 auto;
+  border-radius: 15px;
+  transform: translateY(5rem);
+}
+
+.carousel__image--modal {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 0px;
   cursor: pointer;
+  cursor: unset;
 }
 
-.carousel__track-container {
+.carousel__track-container--modal {
   height: 100%;
   position: relative;
   overflow: hidden; //places slides on top of eachother
-  border-radius: 0px;
+  border-radius: 15px;
 }
 
-.carousel__track {
+.carousel__track--modal {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -31,14 +69,14 @@
   transition: transform 250ms ease-in;
 }
 
-.carousel__slide {
+.carousel__slide--modal {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
 }
 
-.carousel__button {
+.carousel__button--modal {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -48,21 +86,24 @@
   z-index: 5;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
-.carousel__button--left {
-  left: 1rem;
+.carousel__button--left--modal {
+  left: -1.25rem;
 }
 
-.carousel__button--right {
-  right: 1rem;
+.carousel__button--right--modal {
+  right: -1.25rem;
 }
 
-.carousel__nav {
-  display: none;
+.carousel__nav--modal {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
 }
 
-.carousel__indicator {
+.carousel__indicator--modal {
   width: 5.5rem;
   height: 88px;
   border: none;
@@ -77,40 +118,36 @@
   }
 }
 
-.carousel__indicator:hover {
+.carousel__indicator--modal:hover {
   box-shadow: inset 0 0 100px 0px $lightbox-background;
   transition: 0.25s ease-in-out;
 }
 
-.carousel__indicator:first-of-type {
+.carousel__indicator--modal:first-of-type {
   background: url(/images/image-product-1-thumbnail.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.carousel__indicator:nth-of-type(2) {
+.carousel__indicator--modal:nth-of-type(2) {
   background: url(/images/image-product-2-thumbnail.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.carousel__indicator:nth-of-type(3) {
+.carousel__indicator--modal:nth-of-type(3) {
   background: url(/images/image-product-3-thumbnail.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.carousel__indicator:last-of-type {
+.carousel__indicator--modal:last-of-type {
   background: url(/images/image-product-4-thumbnail.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.carousel__indicator.current-slide {
-  border: 2px solid $Orange;
+.carousel__indicator--modal.current-slide {
+  border: 3px solid $Orange;
   box-shadow: inset 0 0 150px 0px $lightbox-background;
-}
-
-.is-hidden {
-  display: none;
 }

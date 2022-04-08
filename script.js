@@ -1,4 +1,4 @@
-import { carousel } from "./carousel.js";
+// import { carousel } from "./carousel.js";
 import { shoppingcart } from "./shoppingcart.js";
 import { track } from "./carousel.js";
 
@@ -16,10 +16,18 @@ closeBtn.addEventListener("click", () => {
   mobileNav.close();
 });
 
-track.addEventListener("click", () => {
-  modal.showModal();
-});
-
 modalCloseBtn.addEventListener("click", () => {
   modal.close();
 });
+
+track.addEventListener("click", () => {
+  const x = window.matchMedia("(min-width: 768px)");
+  popUp(x);
+  x.addEventListener("resize", popUp);
+});
+
+function popUp(x) {
+  if (x.matches) {
+    modal.showModal();
+  }
+}
