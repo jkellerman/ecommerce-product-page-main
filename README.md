@@ -14,7 +14,6 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -37,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/jkellerman/ecommerce-product-page-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://jkellerman.github.io/ecommerce-product-page-main/)
 
 ## My process
 
