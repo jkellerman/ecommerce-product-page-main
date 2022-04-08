@@ -51,9 +51,9 @@ Users should be able to:
 
 This is my first project building a shopping cart, however there were a number of different challenges in this project, including building a carousel and a modal which took a bit of time to figure out.
 
-I learned a quick and easy way of building a modal using the dialog tag and then adding the showmodal() and close() methods to the appropriate elements and then adding the css property backdrop to add background color behind the modal area. See snippets below. This way is much more efficient than the old the way I was doing this, which was to create a new element to use as a backdrop which can get a bit messy. One thing to point out with using dialog tags is that the modal will have some default styles that you may want to remove.
+I learned a quick and easy way of building a modal using the dialog tag and then adding the showmodal() and close() methods to the appropriate elements and then adding the css property backdrop to add background color behind the modal area. See snippets below. This way is much more efficient than the old the way I was doing this, which was to create a new element to use as a backdrop which can get a bit messy. One thing to point out with using dialog tags is that the modal will have some default styles that you may want to remove. However, after deploying to github and testing on safari using my iphone, i quickly discovered that this is still very new and not compatible with the browser. As a result I reverted back to the old way of doing things. I will keep an eye out to see when this will become compatible with more browsers.
 
-I also learned how to use a media query for JavaScript. In this example, I had a click event on the carousel which would pop up a modal, however, I only wanted this to happen on tablet or desktop screens, so I created a resize event listener which would only pop up the modal in screensizes with a min-width of 768px. See code snippet below.
+I also learned how to use a media query for JavaScript. In this example, I had a click event on the carousel which would pop up a modal, however, I only wanted this to happen on tablet or desktop screens, so I created a resize event listener which would only pop up the modal in screen sizes with a min-width of 768px. See code snippet below.
 
 ```js
 hamburger.addEventListener("click", () => {
